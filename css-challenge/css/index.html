@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DreamTech | CSS Challenge</title>
+    <meta name="description" content="A modern, responsive website built with HTML5 and CSS3.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="logo">
+                Dream<span>Tech</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#products">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="eyebrow">DESIGN. CREATE. INNOVATE.</span>
+
+                    <h1>
+                        Build Beautiful
+                        <span>Web Experiences</span>
+                    </h1>
+
+                    <p>
+                        Modern design. Clean code. Better web.
+                        Explore a beautiful interface built with
+                        responsive layouts and creative CSS effects.
+                    </p>
+
+                    <a href="#features" class="btn">Explore Now &rarr;</a>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="visual-glow"></div>
+
+                    <div class="code-window">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="code-content">
+                            <p class="code-purple">const <span>website</span> = {</p>
+                            <p>&nbsp;&nbsp;design: <span>"beautiful"</span>,</p>
+                            <p>&nbsp;&nbsp;layout: <span>"responsive"</span>,</p>
+                            <p>&nbsp;&nbsp;style: <span>"creative"</span></p>
+                            <p class="code-purple">};</p>
+                            <p class="code-comment">// Build something amazing!</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge badge-one">✦ Creative Design</div>
+                    <div class="floating-badge badge-two">{"</>"} Clean Code</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flexbox Cards -->
+        <section class="features section-padding" id="features">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">WHAT WE OFFER</span>
+                    <h2>Our <span>Features</span></h2>
+                    <p>Three essentials for a better digital experience.</p>
+                </div>
+
+                <div class="feature-cards">
+
+                    <article class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast Performance</h3>
+                        <p>
+                            Optimized layouts and smooth interactions
+                            for a better browsing experience.
+                        </p>
+                        <a href="#products" class="text-link">Learn more &rarr;</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">✦</div>
+                        <h3>Clean Design</h3>
+                        <p>
+                            Beautiful typography, balanced spacing,
+                            and a simple user interface.
+                        </p>
+                        <a href="#products" class="text-link">Learn more &rarr;</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">♧</div>
+                        <h3>Responsive Layout</h3>
+                        <p>
+                            A flexible design that adapts to mobile,
+                            tablet, and desktop screens.
+                        </p>
+                        <a href="#products" class="text-link">Learn more &rarr;</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CSS Grid Gallery -->
+        <section class="gallery section-padding" id="products">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">OUR COLLECTION</span>
+                    <h2>Explore Our <span>Gallery</span></h2>
+                    <p>Six beautiful visuals arranged using CSS Grid.</p>
+                </div>
+
+                <div class="product-grid">
+
+                    <article class="product-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=700&q=80"
+                            alt="Beautiful mountain landscape"
+                            loading="lazy"
+                        >
+                        <div class="product-info">
+                            <span class="product-category">Nature</span>
+                            <h3>Mountain Escape</h3>
+                            <p>Explore the beauty of nature.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=700&q=80"
+                            alt="Colorful coastal Italian village"
+                            loading="lazy"
+                        >
+                        <div class="product-info">
+                            <span class="product-category">Travel</span>
+                            <h3>Coastal Dreams</h3>
+                            <p>Discover beautiful destinations.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=700&q=80"
+                            alt="Pink flowers in a garden"
+                            loading="lazy"
+                        >
+                        <div class="product-info">
+                            <span class="product-category">Flora</span>
+                            <h3>Floral Bliss</h3>
+                            <p>Find inspiration in little things.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=80"
+                            alt="Sunlight shining through a green forest"
+                            loading="lazy"
+                        >
+                        <div class="product-info">
+                            <span class="product-category">Adventure</span>
+                            <h3>Forest Trails</h3>
+                            <p>Reconnect with the outdoors.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1472120435266-53107fd0c44a?auto=format&fit=crop&w=700&q=80"
+                            alt="Warm sunset over a landscape"
+                            loading="lazy"
+                        >
+                        <div class="product-info">
+                            <span class="product-category">Sunsets</span>
+                            <h3>Golden Hour</h3>
+                            <p>Enjoy the magic of every sunset.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=700&q=80"
+                            alt="Modern city skyline at night"
+                            loading="lazy"
+                        >
+                        <div class="product-info">
+                            <span class="product-category">Urban</span>
+                            <h3>City Lights</h3>
+                            <p>Experience the energy of the city.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container cta-content">
+                <div>
+                    <span class="eyebrow">HAVE AN IDEA?</span>
+                    <h2>Let's create something amazing.</h2>
+                    <p>Great websites begin with thoughtful design.</p>
+                </div>
+
+                <a href="mailto:hello@example.com" class="btn btn-light">
+                    Get in Touch &rarr;
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="container footer-content">
+            <a href="#home" class="logo footer-logo">
+                Dream<span>Tech</span>
+            </a>
+
+            <p>
+                Built with HTML5, CSS3, Flexbox and Grid.
+            </p>
+
+            <p class="copyright">
+                &copy; 2026 DreamTech. Created for the CSS Challenge.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
